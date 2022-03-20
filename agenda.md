@@ -27,6 +27,7 @@ async await, try catch
 
 
 Angular:
+routing- can home path keep trailing slash?
 TEST    
 services, directives, custom pipes
 dependency injection RXJS for a service

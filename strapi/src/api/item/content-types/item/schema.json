@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "items_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::items-category.items-category"
+    }
+  }
+}
