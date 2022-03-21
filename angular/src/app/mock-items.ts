@@ -6,5 +6,9 @@ export const items = [
     {
         name: 'Ben',
         age: 34
+    },
+    {
+        name: 'added',
+        age: 55
     }
 ]
