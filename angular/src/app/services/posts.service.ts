@@ -13,4 +13,9 @@ export class PostsService {
   public getAllItems(): Observable<PostModel[]> {
     return this.http.get<PostModel[]>(this.myApi + "posts");
   }
+
+  // public addPostAsync(post: PostModel): Promise<PostModel> {
+  //   return this.http.post<PostModel>('http://localhost:3000/api/posts',
+  //   post).toPromise();
+  // }
 }

@@ -6,6 +6,7 @@ import {
 // import { ContentModule } from './content/content.module';
 import { PostsComponent } from './content/posts/posts.component';
 import { HomeComponent } from './pages/home/home.component';
+import { InsertComponent } from './pages/items/insert/insert.component';
 import { ItemsComponent } from './pages/items/items.component';
 
 const routes: Routes = [{
@@ -15,6 +16,10 @@ const routes: Routes = [{
 {
   path: "items",
   component: ItemsComponent
+},
+{
+  path: "items/add",
+  component: InsertComponent
 },
 {
   path: "posts",

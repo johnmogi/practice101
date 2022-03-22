@@ -8,8 +8,15 @@ import { PostModel } from 'src/app/models/post';
 })
 export class InsertComponent implements OnInit {
   public post = new PostModel();
-  constructor() { }
+  constructor() {
 
+
+  }
+
+  addPost() {
+    console.log(this.post);
+
+  }
   ngOnInit(): void {
   }
 

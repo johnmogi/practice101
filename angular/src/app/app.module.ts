@@ -12,6 +12,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ItemsComponent } from './pages/items/items.component';
 import { ItemComponent } from './pages/item/item.component';
 import { InsertComponent } from './pages/items/insert/insert.component';
+import { FormsModule } from '@angular/forms';
+import { ContentModule } from './content/content.module';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,10 @@ import { InsertComponent } from './pages/items/insert/insert.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ContentModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [LayoutComponent]

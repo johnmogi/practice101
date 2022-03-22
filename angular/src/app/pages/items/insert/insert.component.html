@@ -1,3 +1,5 @@
 <form>
-    <input type="text" name="">
+    <input type="text" name="name" [(ngModel)]="post.name">
+    <input type="text" name="name" [(ngModel)]="post.description">
+    <button class="btn btn-primary" (click)="addPost()">Add post</button>
 </form>
