@@ -1,14 +1,14 @@
 import { Body, Controller, Get, Param, Post } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { CreateItemDto } from "./create-item.dto";
-import { Vacations } from "./item.entity";
+import { CreatePostDto } from "./create-item.dto";
+import { Posts } from "./post.entity";
 
-@Controller('/api/items')
+@Controller('/api/posts')
 export class ItemsController {
     constructor(
-        @InjectRepository(Vacations)
-        private readonly repository: Repository<Vacations>
+        @InjectRepository(Posts)
+        private readonly repository: Repository<Posts>
     ) { }
 
     @Get()
@@ -22,7 +22,7 @@ export class ItemsController {
     }
 
     @Post()
-    async create(@Body() input: CreateItemDto) {
+    async create(@Body() input: CreatePostDto) {
         return await this.repository.save({
             ...input,
             // when: new Date(input.when)

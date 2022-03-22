@@ -3,6 +3,8 @@ import {
   RouterModule,
   Routes
 } from '@angular/router';
+// import { ContentModule } from './content/content.module';
+import { PostsComponent } from './content/posts/posts.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ItemsComponent } from './pages/items/items.component';
 
@@ -13,6 +15,10 @@ const routes: Routes = [{
 {
   path: "items",
   component: ItemsComponent
+},
+{
+  path: "posts",
+  component: PostsComponent
 },
 {
   path: "",

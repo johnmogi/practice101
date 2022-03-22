@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { Vacations } from './item.entity';
-import { ItemsController } from './items.controller';
+import { Posts } from './post.entity';
+import { ItemsController } from './posts.controller';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -12,11 +12,11 @@ import { ItemsController } from './items.controller';
     port: 3306,
     username: 'root',
     password: '',
-    database: 'tourist',
-    entities: [Vacations],
+    database: 'strapi2',
+    entities: [Posts],
     synchronize: true
   }),
-  TypeOrmModule.forFeature([Vacations])
+  TypeOrmModule.forFeature([Posts])
   ],
   controllers: [AppController, ItemsController],
   providers: [AppService],
